@@ -16,8 +16,10 @@ model = load_model('emotion_model.h5')
 # Emotion categories
 emotion_classes = ['Angry', 'Disgust', 'Fear', 'Happy', 'Neutral', 'Sad', 'Surprise']
 
+
 # Available languages
-languages = ['English', 'Tamil']
+languages = ['English', 'Tamil', 'Hindi']
+
 
 # Base directory for songs
 BASE_DIR = r"D:\Project-in-Hour\music recommendation\dataset\songs"
@@ -149,7 +151,7 @@ stylish_css = """
 st.markdown(stylish_css, unsafe_allow_html=True)
 
 # Streamlit UI setup
-st.title("🎵 Emotion-Based Music Recommendation")
+st.title("🎵 Music Recommendations-Based on Facial Recognitions")
 st.write("Detects your facial emotion and plays a song based on it!")
 
 # Language selection
